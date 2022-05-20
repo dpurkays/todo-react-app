@@ -18,6 +18,10 @@ function App() {
     filterHandler();
    }, [todos, status]);
 
+   useEffect(() => {
+     document.title = "Dula's Todo List";
+   }, []);
+
   //functions and events
   const filterHandler = () => {
     switch(status){
